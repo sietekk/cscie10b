@@ -1,0 +1,11 @@
+Script started on Mon 09 Mar 2015 12:29:27 AM EDT
+mconroy@ice3:~/cscie10b/unit5.2$ java ShipTest [6@c ShipTest.java[C[6P ShipTest[C
+Cruiseship data: 1) name: Carnival, and 2) max passengers: 100.
+Cruiseship data: 1) name: Royal Carribean, and 2) max passengers: 350.
+Cargo ship data: 1) name: USS Awesome, and 2) tonnage: 1000.0.
+Cargo ship data: 1) name: USS Bob, and 2) tonnage: 873.02.
+Tanker data: 1) name: USS Moose, and 2) gallons: 1500.5.
+Tanker data: 1) name: USS Waffle, and 2) gallons: 3.14159.
+mconroy@ice3:~/cscie10b/unit5.2$ exit
+
+Script done on Mon 09 Mar 2015 12:29:34 AM EDT

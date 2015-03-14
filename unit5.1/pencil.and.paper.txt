@@ -1,0 +1,62 @@
+PENCIL AND PAPER EXERCISES
+--------------------------
+CSCI E-10b
+Unit 5.1
+Michael Conroy
+mconroy@g.harvard.edu
+sietekk@gmail.com
+--------------------------
+Question 1:
+a1 = [26,19,14,11,10]
+
+Question 2:
+a) Base Case:
+    if ( n < 10 ) { return n; }
+b) Recursive Case:
+    else return (n % 10) + digitSum(n / 10);
+
+Question 3:
+    switch (m)
+    {
+        case JAN:
+        case MAR:
+        case MAY:
+        case JUL:
+        case AUG:
+        case OCT:
+        case DEC:
+            numDays = 31;
+            break;
+    
+        case APR:
+        case JUN:
+        case SEP:
+        case NOV:
+            numDays = 30;
+            break;
+        case FEB:
+            numDays = 28;
+            break;
+        default:
+            System.out.println("INVALID: Not a month!");
+            numDays = 0;
+            break;
+    }
+
+Question 4:
+i)
+public static double power (double x, int n)
+{
+    if (n == 0) { //base case
+        return 1.0;
+    } else if (n > 0) {
+        if (n % 2 == 0) { // n is even
+            return power(x * x, n/2);
+        } else { // n is odd
+            return x * power(x, (n-1));
+        }
+    }
+}
+ii) 20
+iii) 12
+

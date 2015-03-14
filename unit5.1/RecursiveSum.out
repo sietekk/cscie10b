@@ -1,0 +1,18 @@
+Script started on Sat 21 Feb 2015 08:06:29 PM EST
+mconroy@ice3:~/cscie10b/unit5.1$ java RecursiveSum.[K
+Enter length of array (positive integers only!): -34234
+Enter only positive integers! Please try again...
+Enter length of array (positive integers only!): 0
+Enter only positive integers! Please try again...
+Enter length of array (positive integers only!): 5
+Enter integer 1: 2
+Enter integer 2: 4
+Enter integer 3: 6
+Enter integer 4: -32
+Enter integer 5: 0
+Array entered: [2, 4, 6, -32, 0]
+Sum of elements: -20
+mconroy@ice3:~/cscie10b/unit5.1$ exit
+exit
+
+Script done on Sat 21 Feb 2015 08:07:15 PM EST

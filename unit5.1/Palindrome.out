@@ -1,0 +1,13 @@
+Script started on Sat 21 Feb 2015 08:03:10 PM EST
+mconroy@ice3:~/cscie10b/unit5.1$ java Palindrome.[K
+Please type a sentence (no numbers!): Hello4
+Sentence may not contain numbers!
+Please try again: Hello
+Your sentence is NOT a palindrome!
+mconroy@ice3:~/cscie10b/unit5.1$ java Palindrome
+Please type a sentence (no numbers!): Hello, olleh
+Your sentence is a palindrome!
+mconroy@ice3:~/cscie10b/unit5.1$ exit
+exit
+
+Script done on Sat 21 Feb 2015 08:04:15 PM EST

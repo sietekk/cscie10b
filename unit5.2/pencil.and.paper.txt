@@ -1,0 +1,56 @@
+PENCIL AND PAPER EXERCISES
+--------------------------
+CSCI E-10b
+Unit 5.2
+Michael Conroy
+mconroy@g.harvard.edu
+sietekk@gmail.com
+--------------------------
+Question 1:
+i) Valid:
+    Cell c = new BloodCell();
+    Cell c = new RedBloodCell();
+    BloodCell c = new RedBloodCell();
+ii) Invalid:
+    RedBloodCell c = new BloodCell();
+        The subclass RedBloodCell extends the superclass BloodCell,
+        so BloodCell cannot be an object of RedBloodCell,
+        because superclasses cannot be objects of their subclasses.
+
+Question 2:
+i) Valid:
+    class Guitar extends Instrument
+    class FriedEgg extends Food
+    class Beagle extends Pet
+    class RollingStones extends RockBand
+ii) Invalid:
+    class Person extends Employee
+    class Oven extends Kitchen
+    class Ferrari extends Engine
+    class Container extends Jar
+    class Beverage extends Martini
+    class Metal extends Titanium
+
+Question 3:
+    public abstract class Pet
+    {
+    
+        private int year;
+        private String name;
+    
+        // Initialize a new Pet object with name and year
+        public Pet (int petYear, String petName)
+        {
+            year = petYear;
+            name = petName;
+        }
+    
+        // Method returns name of the pet
+        public String getName ()
+        {
+            return name;
+        }
+    
+        // Abstract method to be implemented by subclasses Dog and Cat
+        public abstract String speak ();
+    }
