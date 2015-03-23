@@ -1,0 +1,102 @@
+PENCIL AND PAPER EXERCISES
+--------------------------
+CSCI E-10b
+Unit 5.3
+Michael Conroy
+mconroy@g.harvard.edu
+sietekk@gmail.com
+--------------------------
+Question 1:
+    import java.util.*;
+    public class reverseArgs
+    {
+        public static void main(String [] args)
+        {
+            for (int i = args.length-1; i >= 0; i--)
+            {
+                System.out.println(args[i]);
+            }
+        }
+    }
+
+Question 2:
+(i) Program that throws a nullPointerException:
+
+    import java.util.*;
+    public class test
+    {
+        public static void main(String [] args)
+        {
+            String testString = new String();
+            testString = null;
+            testString.length();
+        }
+    }
+
+(ii) The nullPointerException is NOT a checked exception, because
+    the program can't reasonably recover from the exception. Checked
+    exceptions are required to be implemented with a "throws"
+    statement, so the program can recover from the exception with
+    a try-catch statement.
+
+Question 3:
+(i) The loop never terminates, because the ArrayList grows by
+    one element while the iterant i increments by one for every
+    iteration. Since a.length() is evaluated (and grows by one)
+    for every iteration, the termination expression will never
+    evaluate to false.
+(ii) To fix this, set the iterant i = a.length-1, evaluate i >= 0,
+    and decrement i by one (i--) over each loop iteration. Example:
+
+    for (int i = a.length()-1; i >= 0; i--) a.add(i, "NOT");
+
+Question 4:
+    boolean enterAgain;
+    do {
+        try {
+            System.out.print(“Type an int: “);
+            n1 = keyboard.nextInt();
+            System.out.print(“Now type another int: “);
+            n2 = keyboard.nextInt();
+            r = (double) (n1/n2);
+            enterAgain = false;
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Division by zero! Please try again...");
+            enterAgain = true;
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Enter only integers! Please try again...");
+            enterAgain = true;
+        }
+    } while (enterAgain == true);
+
+Question 5:
+    class MyException extends Exception {}
+    public class ExcExample {
+        
+        public static void main (String [] args) {
+            String test = args[0];
+            System.out.print("t");
+            try {
+                doRisky (test);
+            }
+            catch (MyException e) {
+                System.out.print("a");
+            } finally {
+                System.out.print("w");
+                System.out.println("s");
+            }
+        }
+        
+        static void doRisky (String arg) throws MyException
+        {
+            System.out.print("h");
+            if ("Obama".equals(arg)) {
+                throw new MyException();
+            }
+            System.out.print("r");
+            System.out.print("o");
+        }
+    }
+
